@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.clear-fix{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: #7b5244;
+}
+/* --------------- */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.nav-img{
+    width: 13%;
+    float: left;
+}
+.nav-taps{
+    width: 68%;
+    float: left;
+    padding: 5px 50px;
+    font-weight: bold;
+}
+.nav-taps li{
+    float: left;
+    padding: 10px 20px;
+    list-style: none;
+    position: relative;
+}
+.tap-overlay1{
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 1.8px;
+    height: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover .tap-overlay1{
+    height: 50%;
+}
+.tap-overlay2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.8px;
+    height: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover .tap-overlay2{
+    height: 50%;
+}
+.tap-overlay3{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    width: 1.5px;
+    height: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover .tap-overlay3{
+    height: 50%;
+}
+.tap-overlay4{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1.5px;
+    height: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover .tap-overlay4{
+    height: 50%;
+}
+.nav-taps li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover::after{
+    width: 100%;
+    transition-delay: 0.25s;
+}
+.nav-taps li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #7b5244;
+    transition: 0.25s;
+}
+.nav-taps li:hover::before{
+    width: 100%;
+    transition-delay: 0.25s;
+}
+.nav-icons{
+    width: 19%;
+    float: left;
+    padding: 10px 0px;
+}
+.nav-icons i{
+    font-size: 1.8em;
+}
+.center-ico{
+    margin: 0px 15px;
+}
+.cart-counter{
+    padding: 5px;
+    background-color: #7b5244;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+}
+/* -------------------Header--------------- */
+
+/* -------------------Main--------------- */
+.nav-img img , .main-img , .category-item img , .Feature-item img , .Feature-overlay img{
+    width: 100%;
+}
+/* -------------------Main--------------- */
+
+/* -------------------Section-2--------------- */
+.sec-title{
+    text-align: center;
+    font-size: 20px;
+}
+.title{
+    margin-bottom: 10px;
+}
+.title-underline{
+    width: 100px;
+    height: 2.5px;
+    background-color: #7b5244;
+    margin: auto;
+    transition: 0.5s;
+}
+.sec-title:hover .title-underline{
+    transform: scale(1.5,1);
+}
+/* --------------- */
+.category-items{
+    padding: 30px 0px;
+    overflow: auto;
+}
+.category-item{
+    width: 24%;
+    float: left;
+    position: relative;
+}
+.category-gap{
+    width: 1.333333333%;
+    height: 5px;
+    float: left;
+}
+.category-item p{
+    margin: 15px 0px 4px 0px;
+    color: gray;
+}
+.category-item-icon{
+    width: 35px;
+    height: 35px;
+    background-color: brown;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.category-item:hover .category-item-icon{
+    visibility: visible;
+}
+/* --------------- */
+.discount-Penelope{
+    width: 50%;
+    background-color: #f7f3ef;
+    padding: 20px;
+    float: left;
+}
+.discount-Penelope i{
+    color: #7b5244;
+    font-size: 60px;
+}
+.Penelope-content{
+    margin: 28px 0px 45px 0px;
+    line-height: 25px;
+}
+.Penelope-dash{
+    width: 50px;
+    height: 1.5px;
+    background-color: #7b5244;
+    float: right;
+    margin: 0px 10px;
+}
+.discount-gap{
+    width: 2%;
+    height: 5px;
+    float: left;
+}
+.discount-item{
+    width: 23%;
+    height: 300px;
+    float: left;
+    padding: 20px;
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-size: 17px;
+    transition: 1s;
+}
+.discount-item2{
+    background-image: url(../images/cms-banner-2.jpg);
+}
+.discount-item p{
+    color: #7b5244;
+    font-size: 18px;
+}
+.discount-item:hover{
+    transform: scale(1.1);
+}
+/* --------------- */
+.delivery-items{
+    margin: 40px 0px;
+    column-count: 5;
+    column-rule: 2px solid #7b5244;
+}
+.delivery-item{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.delivery-item-img{
+    width: 40px;
+    height: 50px;
+    margin: auto;
+    background-image: url(../images/service-icon.png);
+    background-size: cover;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.delivery-item p{
+    color: #c4c4c4;
+}
+.delivery-item:hover .delivery-item-img{
+    background-position: 0px -87px;
+}
+.delivery-item-img2{
+    background-position: 0px -174px;
+}
+.delivery-item:hover .delivery-item-img2{
+    background-position: 0px -261px;
+}
+.delivery-item-img3{
+    background-position: 0px -348px;
+}
+.delivery-item:hover .delivery-item-img3{
+    background-position: 0px -435px;
+}
+.delivery-item-img4{
+    background-position: 0px -522px;
+}
+.delivery-item:hover .delivery-item-img4{
+    background-position: 0px -609px;
+}
+.delivery-item-img5{
+    background-position: 0px -696px;  
+}
+.delivery-item:hover .delivery-item-img5{
+    background-position: bottom;
+}
+/* -------------------Section-2--------------- */
+
+/* -------------------Section-3--------------- */
+.Featured-Products{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+.Featured-Products span{
+    padding: 15px;
+}
+.Featured-items{
+    margin: 50px 0px;
+    column-count: 3;
+}
+.Featured-item{
+    width: 100%;
+    position: relative;
+}
+.Featured-item i{
+    color: yellow;
+    font-size: 14px;
+}
+.Featured-item p{
+    margin: 5px 0px;
+}
+.Featured-item .star-empty{
+    color: #000;
+}
+.Featured-overlay{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(90deg);
+    transition: 0.5s;
+}
+.Featured-overlay{
+    opacity: 0.9;
+}
+.Featured-overlay i{
+    width: 40px;
+    height: 40px;
+    background-color: #7b5244;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.Featured-icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.Featured-item:hover .Featured-overlay{
+    transform: rotateY(0deg);
+}
+/* -------------------Section-3--------------- */
